@@ -12,3 +12,7 @@ class Comment(models.Model):
     to_photo = models.ForeignKey(
         Photo, on_delete=models.CASCADE
     )
+
+
+class Like(models.Model):
+    to_photo = models.ForeignKey(Photo, on_delete=models.CASCADE)
